@@ -1,0 +1,44 @@
+{
+  "name": "parcel-template",
+  "version": "0.0.1",
+  "description": "Parcel Configuration Template",
+  "scripts": {
+    "build": "parcel build index.html",
+    "build:prod": "rimraf dist/ && parcel build index.html",
+    "clean": "rimraf dist/ .parcel-cache/",
+    "dev": "parcel index.html",
+    "format": "prettier --write .",
+    "lint": "eslint . --fix",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/baptistemcn/baptistemcn.com.git"
+  },
+  "keywords": [
+    "Parce",
+    "Typescript",
+    "SASS"
+  ],
+  "author": "Baptiste Marcon <baptistemcn@icloud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/baptistemcn/baptistemcn.com/issues"
+  },
+  "homepage": "https://github.com/baptistemcn/baptistemcn.com#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
+    "eslint": "^8.26.0",
+    "husky": "^8.0.1",
+    "parcel": "^2.7.0",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "eslint-plugin-html": "^7.1.0"
+  }
+}
